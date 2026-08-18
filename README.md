@@ -30,17 +30,31 @@ A configurable ingestion platform for streaming and scheduled MongoDB data into 
 
 **Highlights:** initial snapshots, continuous CDC, GZIP JSONL output, checksums, multipart S3 uploads, resume tokens, recovery markers, bounded backfills, targeted patch workflows, and local object-store support.
 
+### [Serverless Streamer Monitoring & Campaign Analytics](https://github.com/Hamzahmed/serverless-streamer-monitoring)
+
+An AWS Lambda and Step Functions workflow that checks a creator roster on a schedule, starts monitoring when a streamer goes live, and records metadata, viewer activity, chat, transcript segments, and product mentions throughout the session.
+
+**Highlights:** EventBridge, AWS Step Functions, Lambda, S3, DynamoDB session locking, platform adapters, mention detection, audience snapshots, and per-stream summaries.
+
 ### [Databricks LLM Content Pipeline with Human Review](https://github.com/Hamzahmed/databricks-llm-content-pipeline)
 
 A registry-driven Databricks workflow that filters source material, generates structured content with LLMs, routes valid and invalid results, and prepares outputs for human review.
 
 **Highlights:** PySpark, Delta Lake, model-based relevance filtering, deterministic pre-screening, retries and backoff, Unity Catalog Volumes, registry state transitions, optional Slack and Google Drive delivery, and safe migration utilities.
 
+### [Gaming Community Sentiment Analytics](https://github.com/Hamzahmed/gaming-community-sentiment)
+
+A Databricks and PySpark NLP pipeline for understanding how community chat responds to product changes, new features, and game launches.
+
+**Highlights:** MongoDB/Spark ingestion, balanced sentiment training data, DistilBERT fine-tuning, MLflow registration, GPU-aware batch inference, Delta outputs, and daily or topic-level sentiment trends.
+
 ## What I have built
 
 - Real-time and batch data platforms processing millions of records per day across MongoDB, Kafka, Amazon S3, Databricks, Snowflake, and PostgreSQL.
 - Cloud data systems across AWS, GCP, and Azure for organizations including Google, Nike, Epic Games, and Hitachi Energy.
 - Streaming, CDC, orchestration, and transformation systems using Kafka, Pub/Sub, Airflow/MWAA, dbt, Spark, AWS Glue, Fivetran, and Airbyte.
+- Serverless monitoring and attribution workflows using EventBridge, AWS Lambda, Step Functions, S3, platform APIs, and custom collection methods where official APIs did not yet exist.
+- Machine-learning and NLP systems for community sentiment, moderation, fraud detection, natural-language data access, and operational decision support.
 - Agentic and LLM-powered workflows for research, content generation, customer support, moderation, natural-language data access, and stakeholder automation.
 - Analytics and metric systems spanning Snowflake, Databricks, BigQuery, Redshift, Sigma, Tableau, and Looker Studio.
 - Infrastructure and delivery workflows using Terraform, Docker, Kubernetes, GitHub Actions, CircleCI, and cloud-native compute services.
@@ -61,8 +75,8 @@ Spark / PySpark, dbt, Airflow / MWAA, Kafka, Pub/Sub, Fivetran, Airbyte, AWS Glu
 **Cloud and infrastructure**  
 AWS, GCP, Azure, Terraform, Docker, Kubernetes, GitHub Actions, CircleCI
 
-**AI and agentic systems**  
-OpenAI-compatible APIs, LangChain, LlamaIndex, RAG, FAISS, BERT, MCP integrations, Databricks Genie / GenieAgent, structured generation, relevance filtering, and human-review workflows
+**AI, ML, and agentic systems**  
+OpenAI-compatible APIs, LangChain, LlamaIndex, RAG, FAISS, BERT, DistilBERT, MLflow, TensorFlow, Keras, MCP integrations, Databricks Genie / GenieAgent, structured generation, relevance filtering, and human-review workflows
 
 ## Background
 
@@ -78,7 +92,7 @@ Through [Knownbyfew](https://knownbyfew.com), I work with teams that need senior
 - ETL / ELT, CDC, streaming, orchestration, and data-quality systems;
 - backend integrations, APIs, and operational automation;
 - Snowflake, Databricks, AWS, GCP, PostgreSQL, and MongoDB systems;
-- applied AI and agentic workflows built on production data;
+- applied AI, machine learning, and agentic workflows built on production data;
 - engineering processes for safely using AI coding agents.
 
 I am most useful on projects that need someone who can move between architecture, implementation, debugging, infrastructure, and delivery without treating them as separate problems.
