@@ -42,11 +42,17 @@ A registry-driven Databricks workflow that filters source material, generates st
 
 **Highlights:** PySpark, Delta Lake, model-based relevance filtering, deterministic pre-screening, retries and backoff, Unity Catalog Volumes, registry state transitions, optional Slack and Google Drive delivery, and safe migration utilities.
 
-### [Gaming Community Sentiment Analytics](https://github.com/Hamzahmed/gaming-community-sentiment)
+### [Databricks LoRA Creative Asset Pipeline](https://github.com/Hamzahmed/databricks-lora-creative-pipeline)
 
-A Databricks and PySpark NLP pipeline for understanding how community chat responds to product changes, new features, and game launches.
+A GPU-oriented creative workflow that adapts SDXL to an existing game-art style, generates traceable asset variations, filters obvious failures, and prepares approved candidates for designer review.
 
-**Highlights:** MongoDB/Spark ingestion, balanced sentiment training data, DistilBERT fine-tuning, MLflow registration, GPU-aware batch inference, Delta outputs, and daily or topic-level sentiment trends.
+**Highlights:** SDXL, LoRA, Diffusers, PEFT, Accelerate, BLIP captions, MLflow, Delta prompt libraries, seeded generation, vision-based quality scoring, human review, and design-handoff automation.
+
+### [Gaming Community Intelligence: Sentiment & Personas](https://github.com/Hamzahmed/gaming-community-intelligence)
+
+A Databricks and PySpark workflow that turns community chat into sentiment trends and aggregate research personas for understanding reactions to product changes, launches, support friction, and recurring community needs.
+
+**Highlights:** MongoDB/Spark ingestion, DistilBERT fine-tuning, MLflow registration, message-level scoring, daily/topic trends, privacy-conscious aggregation, LLM summaries, embeddings, KMeans clustering, structured persona cards, and research Q&A simulation.
 
 ## What I have built
 
@@ -54,7 +60,8 @@ A Databricks and PySpark NLP pipeline for understanding how community chat respo
 - Cloud data systems across AWS, GCP, and Azure for organizations including Google, Nike, Epic Games, and Hitachi Energy.
 - Streaming, CDC, orchestration, and transformation systems using Kafka, Pub/Sub, Airflow/MWAA, dbt, Spark, AWS Glue, Fivetran, and Airbyte.
 - Serverless monitoring and attribution workflows using EventBridge, AWS Lambda, Step Functions, S3, platform APIs, and custom collection methods where official APIs did not yet exist.
-- Machine-learning and NLP systems for community sentiment, moderation, fraud detection, natural-language data access, and operational decision support.
+- Machine-learning and NLP systems for community sentiment, aggregate persona research, moderation, fraud detection, natural-language data access, and operational decision support.
+- Generative-design workflows using SDXL, LoRA, MLflow, structured prompt libraries, vision-based quality checks, and human design review.
 - Agentic and LLM-powered workflows for research, content generation, customer support, moderation, natural-language data access, and stakeholder automation.
 - Analytics and metric systems spanning Snowflake, Databricks, BigQuery, Redshift, Sigma, Tableau, and Looker Studio.
 - Infrastructure and delivery workflows using Terraform, Docker, Kubernetes, GitHub Actions, CircleCI, and cloud-native compute services.
@@ -76,7 +83,7 @@ Spark / PySpark, dbt, Airflow / MWAA, Kafka, Pub/Sub, Fivetran, Airbyte, AWS Glu
 AWS, GCP, Azure, Terraform, Docker, Kubernetes, GitHub Actions, CircleCI
 
 **AI, ML, and agentic systems**  
-OpenAI-compatible APIs, LangChain, LlamaIndex, RAG, FAISS, BERT, DistilBERT, MLflow, TensorFlow, Keras, MCP integrations, Databricks Genie / GenieAgent, structured generation, relevance filtering, and human-review workflows
+OpenAI-compatible APIs, LangChain, LlamaIndex, RAG, FAISS, BERT, DistilBERT, SDXL, LoRA, Diffusers, PEFT, embeddings, KMeans, MLflow, TensorFlow, Keras, MCP integrations, Databricks Genie / GenieAgent, structured generation, relevance filtering, and human-review workflows
 
 ## Background
 
